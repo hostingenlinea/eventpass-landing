@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href={`${APP_URL}/login`}
-            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors hidden sm:block"
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
           >
             Iniciar sesión
           </a>
@@ -38,7 +38,7 @@ export default function Navbar() {
             href={`${APP_URL}/register`}
             className="text-sm font-semibold px-4 py-2 rounded-lg bg-violet-700 text-white hover:bg-violet-800 transition-colors"
           >
-            Comenzá gratis
+            Comenzá
           </a>
         </div>
       </div>
