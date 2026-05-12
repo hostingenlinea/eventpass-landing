@@ -5,6 +5,7 @@ const plans = [
     id: "esencial",
     name: "Esencial",
     price: 40000,
+    period: "evento",
     description: "Para organizadores que quieren digitalizar sus eventos",
     features: [
       "Invitados ilimitados",
@@ -23,6 +24,7 @@ const plans = [
     id: "completo",
     name: "Completo",
     price: 65000,
+    period: "evento",
     description: "El más elegido — todo lo que necesitás el día del evento",
     features: [
       "Todo lo del plan Esencial",
@@ -41,6 +43,7 @@ const plans = [
     id: "pro",
     name: "Pro",
     price: 90000,
+    period: "evento",
     description: "Para eventos con venta de entradas y máximo control",
     features: [
       "Todo lo del plan Completo",
@@ -54,6 +57,24 @@ const plans = [
     cta: "Elegir Pro",
   },
 ];
+
+const salonPlan = {
+  id: "salon",
+  name: "Salón",
+  price: 150000,
+  period: "mes",
+  description: "Para salones de fiestas con múltiples eventos por mes",
+  features: [
+    "Eventos ilimitados",
+    "Todo lo del plan Pro incluido",
+    "Check-in con QR en la puerta",
+    "Mapa de mesas interactivo",
+    "Entradas pagas con MercadoPago",
+    "Recordatorios automáticos por email",
+    "Soporte prioritario",
+  ],
+  cta: "Elegir Salón",
+};
 
 export default function Pricing() {
   return (
@@ -100,7 +121,7 @@ export default function Pricing() {
                     ${plan.price.toLocaleString("es-AR")}
                   </span>
                   <span className={`text-sm mb-1.5 ${plan.highlight ? "text-violet-200" : "text-gray-400"}`}>
-                    ARS / evento
+                    ARS / {plan.period}
                   </span>
                 </div>
                 <p className={`text-sm leading-relaxed ${plan.highlight ? "text-violet-100" : "text-gray-500"}`}>
@@ -135,6 +156,37 @@ export default function Pricing() {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* Salón plan — full width */}
+        <div className="mt-6 relative rounded-2xl border-2 border-amber-400 bg-amber-50 p-7 flex flex-col md:flex-row md:items-center gap-6">
+          <div className="absolute -top-3 left-6">
+            <span className="bg-amber-400 text-amber-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+              Para salones de fiestas
+            </span>
+          </div>
+          <div className="flex-1">
+            <p className="text-sm font-semibold uppercase tracking-widest text-amber-700 mb-1">{salonPlan.name}</p>
+            <div className="flex items-end gap-1 mb-1">
+              <span className="text-4xl font-bold text-gray-900">${salonPlan.price.toLocaleString("es-AR")}</span>
+              <span className="text-sm mb-1.5 text-gray-400">ARS / {salonPlan.period}</span>
+            </div>
+            <p className="text-sm text-gray-500">{salonPlan.description}</p>
+          </div>
+          <ul className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+            {salonPlan.features.map((f) => (
+              <li key={f} className="flex items-start gap-2 text-sm text-gray-700">
+                <span className="text-amber-600 mt-0.5 flex-shrink-0">✓</span>
+                {f}
+              </li>
+            ))}
+          </ul>
+          <a
+            href={`${APP_URL}/register?plan=${salonPlan.id}`}
+            className="block text-center py-3 px-8 rounded-xl font-semibold text-sm bg-amber-400 text-amber-900 hover:bg-amber-500 transition-colors whitespace-nowrap"
+          >
+            {salonPlan.cta} →
+          </a>
         </div>
 
         <p className="text-center text-sm text-gray-400 mt-10">
