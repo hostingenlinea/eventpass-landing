@@ -4,7 +4,7 @@ const plans = [
   {
     id: "esencial",
     name: "Esencial",
-    price: 40000,
+    price: 30000,
     period: "evento",
     description: "Para organizadores que quieren digitalizar sus eventos",
     features: [
@@ -25,7 +25,7 @@ const plans = [
   {
     id: "completo",
     name: "Completo",
-    price: 65000,
+    price: 50000,
     period: "evento",
     description: "El más elegido — todo lo que necesitás el día del evento",
     features: [
@@ -42,7 +42,7 @@ const plans = [
   {
     id: "pro",
     name: "Pro",
-    price: 90000,
+    price: 80000,
     period: "evento",
     description: "Para eventos con venta de entradas y máximo control",
     features: [
@@ -61,7 +61,7 @@ const plans = [
 const salonPlan = {
   id: "salon",
   name: "Salón",
-  price: 150000,
+  price: 120000,
   period: "mes",
   description: "Para salones de fiestas con múltiples eventos por mes",
   features: [
