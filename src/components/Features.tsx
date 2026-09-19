@@ -47,10 +47,10 @@ export default function Features() {
             Funcionalidades
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-            Todo lo que necesitás para tu evento
+            Una base común para organizar mejor
           </h2>
           <p className="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
-            Desde la invitación hasta el check-in final, EventPass lo tiene todo cubierto.
+            Herramientas pensadas para que cada solución del ecosistema te ahorre tiempo y trabajo.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function Features() {
         {/* Mini CTA */}
         <div className="mt-16 text-center">
           <p className="text-gray-400 text-sm">
-            ¿Querés verlo en acción?{" "}
+            ¿Querés empezar a organizar?{" "}
             <a
               href="https://app.eventpass.click/register"
               className="text-violet-700 font-medium hover:underline underline-offset-4"

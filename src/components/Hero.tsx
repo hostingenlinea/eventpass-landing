@@ -13,18 +13,16 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-violet-500 animate-pulse" />
-          Plataforma todo-en-uno para eventos
+          Un ecosistema para cada tipo de evento
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight max-w-4xl mx-auto">
-          Organizá eventos{" "}
-          <span className="text-violet-700">memorables</span>{" "}
-          desde un solo lugar
+          Todo lo que necesitás para que tu evento salga bien
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-          Gestioná invitados, confirmaciones, check-in con QR, mesas, regalos y playlist
-          colaborativa — todo en una sola plataforma.
+          Soluciones simples para organizar celebraciones, vender entradas y gestionar cada
+          acceso o pertenencia, desde la planificación hasta el último invitado.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -35,10 +33,10 @@ export default function Hero() {
             Comenzá gratis →
           </a>
           <a
-            href="#features"
+            href="#products"
             className="px-8 py-3.5 rounded-xl border border-gray-200 text-gray-700 font-semibold text-base hover:border-gray-300 hover:bg-gray-50 transition-colors"
           >
-            Ver funcionalidades
+            Conocé las soluciones
           </a>
         </div>
 
@@ -58,7 +56,7 @@ export default function Hero() {
                 <div className="w-3 h-3 rounded-full bg-green-400" />
               </div>
               <div className="flex-1 mx-4 bg-white rounded-md px-3 py-1 text-xs text-gray-400 text-left">
-                app.eventpass.click/dashboard
+                app.eventpass.click/ecosistema
               </div>
             </div>
             {/* Dashboard preview */}

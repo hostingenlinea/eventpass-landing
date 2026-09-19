@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">EventPass WhatsApp Business</title>
+  <desc id="desc">Logo cuadrado de EventPass para usar como imagen de perfil en WhatsApp Business.</desc>
+  <rect width="1024" height="1024" fill="#25D366"/>
+  <circle cx="512" cy="512" r="392" fill="#128C7E" opacity=".2"/>
+  <circle cx="512" cy="512" r="306" fill="#fff"/>
+  <path fill="#5B21B6" d="M300 378c0-27 22-49 49-49h326c27 0 49 22 49 49v268c0 27-22 49-49 49H349c-27 0-49-22-49-49V378Z"/>
+  <path fill="#fff" d="M300 457h424v44H300z"/>
+  <path fill="#fff" d="M405 329h46v48h-46zM573 329h46v48h-46zM405 647h46v48h-46zM573 647h46v48h-46z"/>
+  <path fill="#fff" d="M404 527h216v38H404z"/>
+  <path fill="#fff" d="M404 583h140v38H404z"/>
+</svg>
