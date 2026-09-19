@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
-          <a href="#products" className="hover:text-gray-900 transition-colors">Productos</a>
+          <a href="#products" className="hover:text-gray-900 transition-colors">Soluciones</a>
           <a href="#features" className="hover:text-gray-900 transition-colors">Funcionalidades</a>
           <a href="#pricing" className="hover:text-gray-900 transition-colors">Precios</a>
         </nav>
