@@ -1,4 +1,4 @@
-const APP_URL = "https://app.eventpass.click";
+import RegisterForm from "./RegisterForm";
 
 export default function Hero() {
   return (
@@ -21,15 +21,7 @@ export default function Hero() {
           — sin intermediarios, sin esperar la liquidación.
         </p>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-          <a href={`${APP_URL}/register`} style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 15, padding: "13px 26px", borderRadius: 10, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 7 }} className="hover:opacity-85 transition-opacity">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            Crear mi primer evento
-          </a>
-          <a href="#como-funciona" style={{ border: "1.5px solid var(--border)", color: "var(--snow)", fontWeight: 500, fontSize: 15, padding: "12px 22px", borderRadius: 10, textDecoration: "none" }} className="hover:border-white/25 transition-colors">
-            Cómo funciona
-          </a>
-        </div>
+        <RegisterForm />
       </div>
 
       {/* Dashboard mockup */}
