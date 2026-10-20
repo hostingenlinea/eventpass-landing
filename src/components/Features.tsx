@@ -1,88 +1,35 @@
 const features = [
-  {
-    emoji: "👥",
-    title: "Gestión de invitados",
-    description:
-      "Agregá, editá y organizá todos tus invitados. Registrá alérgias, necesidades especiales y mensajes al anfitrión.",
-  },
-  {
-    emoji: "📱",
-    title: "Check-in con QR",
-    description:
-      "Cada invitado recibe su código QR único. El check-in en la puerta es instantáneo desde cualquier dispositivo.",
-  },
-  {
-    emoji: "🪑",
-    title: "Mapa de mesas",
-    description:
-      "Asigná invitados a mesas redondas o rectangulares con un solo clic. Los invitados ven su mesa en la invitación.",
-  },
-  {
-    emoji: "🎁",
-    title: "Lista de deseos",
-    description:
-      "Publicá lo que querés recibir. Tus invitados ven la lista y pueden regalar exactamente lo que necesitás.",
-  },
-  {
-    emoji: "💸",
-    title: "Regalos y transferencias",
-    description:
-      "Registrá cada transferencia recibida con monto, método y remitente. El total siempre a la vista.",
-  },
-  {
-    emoji: "🎵",
-    title: "Playlist colaborativa",
-    description:
-      "Tus invitados sugieren canciones, vos aprobás las que querés. La playlist de tu fiesta armada entre todos.",
-  },
+  { emoji: "📱", title: "Escaneo QR", body: "Cada comprador recibe su entrada con QR por email. Validá desde cualquier celular el día del evento, sin internet." },
+  { emoji: "🎟️", title: "Tipos de entrada", body: "Early Bird, VIP, General, gratuitas — cada tipo con precio, cupo y descripción. Control total del inventario." },
+  { emoji: "🏷️", title: "Cupones de descuento", body: "Códigos de descuento en ARS o USD para prensa, artistas o compradores especiales. Validación automática al checkout." },
+  { emoji: "📊", title: "Stock en tiempo real", body: "Ves cuántas entradas quedan en vivo. Las reservas se bloquean durante la compra para evitar sobreventas." },
+  { emoji: "⚡", title: "Preventa automática", body: "Precio de preventa con fecha de cierre. Sube solo al llegar la fecha, sin que tengas que hacer nada." },
+  { emoji: "🌐", title: "Página pública del evento", body: "Cada evento tiene su URL. Cover, descripción, mapa, FAQs y checkout todo en una sola página lista para compartir." },
 ];
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-violet-700 font-semibold text-sm uppercase tracking-widest mb-3">
-            Funcionalidades
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-            Una base común para organizar mejor
-          </h2>
-          <p className="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
-            Herramientas pensadas para que cada solución del ecosistema te ahorre tiempo y trabajo.
-          </p>
-        </div>
+    <section id="features" className="max-w-6xl mx-auto px-5" style={{ padding: "100px 20px" }}>
+      <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--pink)", marginBottom: 12 }}>Funcionalidades</p>
+      <h2 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(32px,4vw,54px)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-.025em", marginBottom: 52 }}>
+        Todo lo que necesitás<br />para vender más.
+      </h2>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="bg-white rounded-2xl p-6 border border-gray-200 hover:border-violet-200 hover:shadow-md hover:shadow-violet-100/50 transition-all duration-200 group"
-            >
-              <div className="w-12 h-12 rounded-xl bg-violet-50 flex items-center justify-center text-2xl mb-5 group-hover:bg-violet-100 transition-colors">
-                {feature.emoji}
-              </div>
-              <h3 className="font-semibold text-gray-900 text-lg mb-2">{feature.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Mini CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-400 text-sm">
-            ¿Querés empezar a organizar?{" "}
-            <a
-              href="https://app.eventpass.click/register"
-              className="text-violet-700 font-medium hover:underline underline-offset-4"
-            >
-              Creá tu evento gratis →
-            </a>
-          </p>
-        </div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16 }} className="feat-grid">
+        {features.map(f => (
+          <div key={f.title} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 16, padding: 24 }} className="feat-card">
+            <div style={{ width: 40, height: 40, borderRadius: 10, background: "rgba(255,46,136,.07)", border: "1px solid rgba(255,46,136,.14)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 17, marginBottom: 12 }}>{f.emoji}</div>
+            <h3 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: 17, fontWeight: 700, marginBottom: 6, color: "var(--snow)" }}>{f.title}</h3>
+            <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.6 }}>{f.body}</p>
+          </div>
+        ))}
       </div>
+
+      <style>{`
+        @media(max-width:800px){ .feat-grid{ grid-template-columns:1fr 1fr !important; } }
+        @media(max-width:500px){ .feat-grid{ grid-template-columns:1fr !important; } }
+        .feat-card:hover{ border-color: rgba(255,46,136,.2) !important; }
+      `}</style>
     </section>
   );
 }

@@ -1,7 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Comparison from "@/components/Comparison";
+import Calculator from "@/components/Calculator";
+import Steps from "@/components/Steps";
+import Payments from "@/components/Payments";
 import Features from "@/components/Features";
-import Products from "@/components/Products";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -9,8 +12,11 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <Comparison />
+      <Calculator />
+      <Steps />
+      <Payments />
       <Features />
-      <Products />
       <Footer />
     </main>
   );

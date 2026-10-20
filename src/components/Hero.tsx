@@ -2,103 +2,102 @@ const APP_URL = "https://app.eventpass.click";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white">
-      {/* Background gradient blobs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-violet-100 opacity-60 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-violet-50 opacity-80 blur-3xl" />
-      </div>
-
-      <div className="relative max-w-6xl mx-auto px-6 py-24 md:py-36 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-violet-100 text-violet-700 text-xs font-semibold mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-violet-500 animate-pulse" />
-          Un ecosistema para cada tipo de evento
+    <section className="max-w-6xl mx-auto px-5" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", minHeight: "88vh", padding: "90px 20px 80px" }}>
+      <div>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,46,136,0.08)", border: "1px solid rgba(255,46,136,0.22)", borderRadius: 100, padding: "5px 14px", fontSize: 12, fontWeight: 600, color: "var(--pink)", marginBottom: 24 }}>
+          <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--pink)", animation: "blink 2s ease-in-out infinite", display: "inline-block" }} />
+          Sin comisión de plataforma
         </div>
 
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight max-w-4xl mx-auto">
-          Todo lo que necesitás para que tu evento salga bien
+        <h1 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(42px, 5vw, 70px)", fontWeight: 700, lineHeight: 1.08, letterSpacing: "-0.03em", marginBottom: 22 }}>
+          Tu evento.<br />
+          <span style={{ color: "var(--pink)" }}>Tu plata,</span><br />
+          al instante.
         </h1>
 
-        <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-          Soluciones simples para organizar celebraciones, vender entradas y gestionar cada
-          acceso o pertenencia, desde la planificación hasta el último invitado.
+        <p style={{ fontSize: 17, color: "var(--muted)", lineHeight: 1.7, maxWidth: 430, marginBottom: 38 }}>
+          Publicá tu evento en minutos y conectá MercadoPago, Stripe o PayPal.{" "}
+          <strong style={{ color: "var(--snow)" }}>Cada venta entra directo a tu cuenta</strong>{" "}
+          — sin intermediarios, sin esperar la liquidación.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href={`${APP_URL}/register`}
-            className="px-8 py-3.5 rounded-xl bg-violet-700 text-white font-semibold text-base hover:bg-violet-800 transition-colors shadow-lg shadow-violet-200"
-          >
-            Comenzá gratis →
+        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+          <a href={`${APP_URL}/register`} style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 15, padding: "13px 26px", borderRadius: 10, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 7 }} className="hover:opacity-85 transition-opacity">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Crear mi primer evento
           </a>
-          <a
-            href="#products"
-            className="px-8 py-3.5 rounded-xl border border-gray-200 text-gray-700 font-semibold text-base hover:border-gray-300 hover:bg-gray-50 transition-colors"
-          >
-            Conocé las soluciones
+          <a href="#como-funciona" style={{ border: "1.5px solid var(--border)", color: "var(--snow)", fontWeight: 500, fontSize: 15, padding: "12px 22px", borderRadius: 10, textDecoration: "none" }} className="hover:border-white/25 transition-colors">
+            Cómo funciona
           </a>
         </div>
+      </div>
 
-        {/* Social proof */}
-        <p className="mt-8 text-sm text-gray-400">
-          Sin tarjeta de crédito · Configuración en minutos
-        </p>
-
-        {/* Hero image / mockup */}
-        <div className="mt-16 mx-auto max-w-4xl">
-          <div className="relative rounded-2xl overflow-hidden border border-gray-200 shadow-2xl shadow-gray-200/80">
-            {/* Browser bar */}
-            <div className="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
-              <div className="flex gap-1.5">
-                <div className="w-3 h-3 rounded-full bg-red-400" />
-                <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
+      {/* Dashboard mockup */}
+      <div className="hidden lg:block">
+        <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 18, padding: 24, boxShadow: "0 40px 70px rgba(0,0,0,.5), 0 0 80px rgba(255,46,136,.06)" }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 20 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 7, fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 14, color: "var(--snow)" }}>
+              <div style={{ width: 24, height: 24, background: "var(--pink)", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+                </svg>
               </div>
-              <div className="flex-1 mx-4 bg-white rounded-md px-3 py-1 text-xs text-gray-400 text-left">
-                app.eventpass.click/ecosistema
-              </div>
+              EventPass
             </div>
-            {/* Dashboard preview */}
-            <div className="bg-gray-50 p-6 grid grid-cols-3 gap-4 min-h-[280px]">
-              {/* Sidebar mock */}
-              <div className="col-span-1 bg-violet-900 rounded-xl p-4 space-y-2.5">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-6 h-6 rounded-md bg-violet-600" />
-                  <div className="h-3 w-20 bg-violet-700 rounded" />
-                </div>
-                {["Dashboard", "Invitados", "Mesas", "Check-in", "Regalos"].map((item) => (
-                  <div key={item} className="h-8 rounded-lg bg-violet-800/60 flex items-center px-3">
-                    <div className="h-2 w-16 bg-violet-600/60 rounded" />
-                  </div>
-                ))}
+            <div style={{ display: "flex", alignItems: "center", gap: 5, background: "rgba(34,211,238,.1)", border: "1px solid rgba(34,211,238,.22)", color: "var(--cyan)", fontSize: 11, fontWeight: 600, padding: "3px 10px", borderRadius: 100 }}>
+              <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--cyan)", animation: "blink 1.5s ease-in-out infinite", display: "inline-block" }} />
+              En vivo
+            </div>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 12, marginBottom: 20 }}>
+            {[
+              { val: "3.421", lbl: "Entradas vendidas", cls: "pink" },
+              { val: "18", lbl: "Eventos activos", cls: "" },
+              { val: "$0", lbl: "Comisión nuestra", cls: "cyan" },
+            ].map(({ val, lbl, cls }) => (
+              <div key={lbl} style={{ background: "var(--card2)", borderRadius: 12, padding: "14px 12px", border: "1px solid var(--border)" }}>
+                <div style={{ fontFamily: "var(--font-space-grotesk)", fontSize: 22, fontWeight: 700, color: cls === "pink" ? "var(--pink)" : cls === "cyan" ? "var(--cyan)" : "var(--snow)", lineHeight: 1, marginBottom: 4 }}>{val}</div>
+                <div style={{ fontSize: 11, color: "var(--muted)" }}>{lbl}</div>
               </div>
-              {/* Content mock */}
-              <div className="col-span-2 space-y-4">
-                <div className="grid grid-cols-3 gap-3">
-                  {["124 invitados", "89 confirmados", "12 mesas"].map((stat) => (
-                    <div key={stat} className="bg-white rounded-xl p-4 border border-gray-200">
-                      <div className="h-6 w-8 bg-violet-100 rounded mb-2" />
-                      <div className="h-3 w-full bg-gray-100 rounded mb-1" />
-                      <div className="h-2 w-2/3 bg-gray-50 rounded" />
-                    </div>
-                  ))}
+            ))}
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {[
+              { name: "Festival de Verano 2025", date: "Sáb 25 Ene · Buenos Aires", sold: "418 vendidas", money: "$3.553.000" },
+              { name: "Club Night Vol.12", date: "Vie 31 Ene · Rosario", sold: "201 vendidas", money: "$1.407.000" },
+            ].map(ev => (
+              <div key={ev.name} style={{ background: "var(--card2)", borderRadius: 10, padding: "12px 14px", border: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: "var(--snow)", marginBottom: 2 }}>{ev.name}</div>
+                  <div style={{ fontSize: 11, color: "var(--muted)" }}>{ev.date}</div>
                 </div>
-                <div className="bg-white rounded-xl p-4 border border-gray-200">
-                  <div className="h-3 w-24 bg-gray-200 rounded mb-3" />
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="flex items-center gap-3 py-2 border-b border-gray-50 last:border-0">
-                      <div className="w-7 h-7 rounded-full bg-violet-100 flex-shrink-0" />
-                      <div className="flex-1 h-2 bg-gray-100 rounded" />
-                      <div className="w-16 h-5 rounded-full bg-emerald-100" />
-                    </div>
-                  ))}
+                <div style={{ textAlign: "right" }}>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: "var(--cyan)" }}>{ev.sold}</div>
+                  <div style={{ fontSize: 11, color: "var(--muted)" }}>{ev.money}</div>
                 </div>
               </div>
+            ))}
+          </div>
+
+          <div style={{ marginTop: 14, paddingTop: 14, borderTop: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <span style={{ fontSize: 12, color: "var(--muted)" }}>Métodos de cobro activos</span>
+            <div style={{ display: "flex", gap: 6 }}>
+              {["MercadoPago", "Stripe", "PayPal"].map(m => (
+                <span key={m} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 5, padding: "3px 8px", fontSize: 11, fontWeight: 600, color: "var(--muted)" }}>{m}</span>
+              ))}
             </div>
           </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
+        @media(max-width:900px){
+          section.hero-grid { grid-template-columns:1fr !important; min-height:auto !important; }
+        }
+      `}</style>
     </section>
   );
 }

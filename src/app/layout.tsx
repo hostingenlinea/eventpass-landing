@@ -1,31 +1,34 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+});
+
+const ibmPlexSans = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "EventPass — Organizá eventos memorables",
+  title: "EventPass — Vendé entradas, cobrás vos",
   description:
-    "La plataforma todo-en-uno para gestionar invitados, check-in con QR, mesas, regalos y más. Hacé que cada evento sea inolvidable.",
+    "Publicá tu evento, conectá MercadoPago, Stripe o PayPal y cobrá al instante. Sin comisión de plataforma.",
   openGraph: {
     title: "EventPass",
-    description: "La plataforma todo-en-uno para organizar eventos memorables.",
+    description: "Vendé entradas y cobrás vos — sin comisión de plataforma.",
     url: "https://eventpass.click",
     siteName: "EventPass",
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${inter.variable} scroll-smooth`}>
+    <html lang="es" className={`${spaceGrotesk.variable} ${ibmPlexSans.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">{children}</body>
     </html>
   );
