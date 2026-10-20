@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a href={`${APP_URL}/login`} style={{ fontSize: 14, fontWeight: 500, color: "var(--muted)", textDecoration: "none" }} className="hover:text-white transition-colors hidden sm:block">Ya tengo cuenta</a>
-          <a href={`${APP_URL}/register`} style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 600, fontSize: 14, padding: "9px 20px", borderRadius: 8, textDecoration: "none" }} className="hover:opacity-85 transition-opacity">
+          <a href="#registro" style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 600, fontSize: 14, padding: "9px 20px", borderRadius: 8, textDecoration: "none" }} className="hover:opacity-85 transition-opacity">
             Empezar gratis
           </a>
         </div>

@@ -14,7 +14,7 @@ export default function Footer() {
             Sin costo fijo, sin contrato, sin comisión nuestra. Conectá tu MercadoPago y cobrás desde la primera venta.
           </p>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, flexWrap: "wrap", marginTop: 40 }}>
-            <a href={`${APP_URL}/register`} style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 16, padding: "15px 32px", borderRadius: 11, textDecoration: "none" }} className="hover:opacity-85 transition-opacity">
+            <a href="#registro" style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 16, padding: "15px 32px", borderRadius: 11, textDecoration: "none" }} className="hover:opacity-85 transition-opacity">
               Crear mi cuenta gratis
             </a>
             <a href="#como-funciona" style={{ border: "1.5px solid var(--border)", color: "var(--snow)", fontWeight: 500, fontSize: 16, padding: "14px 28px", borderRadius: 11, textDecoration: "none" }} className="hover:border-white/25 transition-colors">

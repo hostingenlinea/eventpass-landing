@@ -2,7 +2,7 @@ import RegisterForm from "./RegisterForm";
 
 export default function Hero() {
   return (
-    <section className="max-w-6xl mx-auto px-5" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", minHeight: "88vh", padding: "90px 20px 80px" }}>
+    <section id="registro" className="max-w-6xl mx-auto px-5" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", minHeight: "88vh", padding: "90px 20px 80px" }}>
       <div>
         <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,46,136,0.08)", border: "1px solid rgba(255,46,136,0.22)", borderRadius: 100, padding: "5px 14px", fontSize: 12, fontWeight: 600, color: "var(--pink)", marginBottom: 24 }}>
           <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--pink)", animation: "blink 2s ease-in-out infinite", display: "inline-block" }} />

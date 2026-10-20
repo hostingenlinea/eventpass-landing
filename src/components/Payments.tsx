@@ -18,7 +18,7 @@ export default function Payments() {
           <p style={{ fontSize: 17, color: "var(--muted)", lineHeight: 1.7, marginBottom: 28 }}>
             Conectá MercadoPago para cobrar en ARS y Stripe o PayPal para cobrar en USD. Cada pago llega al instante a tu cuenta — sin que nosotros toquemos el dinero.
           </p>
-          <a href={`${APP_URL}/register`} style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 15, padding: "13px 26px", borderRadius: 10, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 7 }} className="hover:opacity-85 transition-opacity">
+          <a href="#registro" style={{ background: "var(--pink)", color: "#fff", fontFamily: "var(--font-space-grotesk)", fontWeight: 700, fontSize: 15, padding: "13px 26px", borderRadius: 10, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 7 }} className="hover:opacity-85 transition-opacity">
             Conectar mi cuenta
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
