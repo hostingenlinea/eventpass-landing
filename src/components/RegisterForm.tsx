@@ -1,7 +1,7 @@
 "use client";
 import { useState, FormEvent } from "react";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://app.eventpass.click";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "https://ticket.eventpass.click";
 
 type State = "idle" | "loading" | "error";
 

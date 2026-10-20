@@ -1,4 +1,4 @@
-const APP_URL = "https://app.eventpass.click";
+const APP_URL = "https://ticket.eventpass.click";
 
 export default function Footer() {
   return (

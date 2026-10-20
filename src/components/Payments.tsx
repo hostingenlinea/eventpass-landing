@@ -1,4 +1,4 @@
-const APP_URL = "https://app.eventpass.click";
+const APP_URL = "https://ticket.eventpass.click";
 
 const methods = [
   { emoji: "💳", name: "MercadoPago", desc: "Tarjetas, débito y cuotas — todo lo que ya usan tus compradores en Argentina.", tag: "ARS", tagColor: "#60a5fa", tagBg: "rgba(0,117,255,.1)" },
