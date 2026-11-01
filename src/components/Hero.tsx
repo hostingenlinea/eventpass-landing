@@ -2,14 +2,14 @@ import RegisterForm from "./RegisterForm";
 
 export default function Hero() {
   return (
-    <section id="registro" className="max-w-6xl mx-auto px-5" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center", minHeight: "88vh", padding: "90px 20px 80px" }}>
+    <section id="registro" className="max-w-6xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 lg:gap-[60px] items-center min-h-[88vh] pt-[72px] pb-[60px] lg:pt-[90px] lg:pb-[80px]">
       <div>
         <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(255,46,136,0.08)", border: "1px solid rgba(255,46,136,0.22)", borderRadius: 100, padding: "5px 14px", fontSize: 12, fontWeight: 600, color: "var(--pink)", marginBottom: 24 }}>
           <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--pink)", animation: "blink 2s ease-in-out infinite", display: "inline-block" }} />
           Sin comisión de plataforma
         </div>
 
-        <h1 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(42px, 5vw, 70px)", fontWeight: 700, lineHeight: 1.08, letterSpacing: "-0.03em", marginBottom: 22 }}>
+        <h1 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(36px, 8vw, 70px)", fontWeight: 700, lineHeight: 1.08, letterSpacing: "-0.03em", marginBottom: 22 }}>
           Tu evento.<br />
           <span style={{ color: "var(--pink)" }}>Tu plata,</span><br />
           al instante.
@@ -86,9 +86,6 @@ export default function Hero() {
 
       <style>{`
         @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
-        @media(max-width:900px){
-          section.hero-grid { grid-template-columns:1fr !important; min-height:auto !important; }
-        }
       `}</style>
     </section>
   );

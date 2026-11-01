@@ -8,8 +8,8 @@ const methods = [
 
 export default function Payments() {
   return (
-    <section id="cobros" style={{ background: "var(--card)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "100px 20px" }}>
-      <div className="max-w-6xl mx-auto px-5" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }} >
+    <section id="cobros" style={{ background: "var(--card)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "80px 20px" }}>
+      <div className="max-w-6xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 lg:gap-[60px] gap-10 items-center">
         <div>
           <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--pink)", marginBottom: 12 }}>Cobros</p>
           <h2 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(32px,4vw,54px)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-.025em", marginBottom: 16 }}>
@@ -39,9 +39,6 @@ export default function Payments() {
       </div>
 
       <style>{`
-        @media(max-width:800px){
-          #cobros > div { grid-template-columns:1fr !important; }
-        }
         .pm-card:hover{ border-color: rgba(255,46,136,.25) !important; }
       `}</style>
     </section>

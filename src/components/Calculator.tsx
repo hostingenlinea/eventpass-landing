@@ -24,7 +24,7 @@ export default function Calculator() {
   const pct = (idx / (TIERS.length - 1)) * 100;
 
   return (
-    <section id="precios" className="max-w-6xl mx-auto px-5" style={{ paddingTop: 0, paddingBottom: 100 }}>
+    <section id="precios" className="max-w-6xl mx-auto px-5 pb-16 lg:pb-24">
       <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--pink)", marginBottom: 12 }}>Calculadora</p>
       <h2 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(32px,4vw,54px)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-.025em", marginBottom: 16 }}>
         Cuántas más entradas,<br />más barato sale cada una.
@@ -33,7 +33,7 @@ export default function Calculator() {
         Mové el slider y ves cómo baja el precio por entrada según el volumen de tu evento.
       </p>
 
-      <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 22, padding: 40 }}>
+      <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 22, padding: "clamp(20px, 5vw, 40px)" }}>
         {/* Results */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 32 }} className="calc-top">
           <div style={{ background: "var(--bg)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px" }}>

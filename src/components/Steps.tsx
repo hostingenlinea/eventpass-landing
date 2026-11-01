@@ -20,7 +20,7 @@ const steps = [
 
 export default function Steps() {
   return (
-    <section id="como-funciona" className="max-w-6xl mx-auto px-5" style={{ padding: "100px 20px" }}>
+    <section id="como-funciona" className="max-w-6xl mx-auto px-5 py-16 lg:py-24">
       <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--pink)", marginBottom: 12 }}>Cómo funciona</p>
       <h2 style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(32px,4vw,54px)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-.025em", marginBottom: 16 }}>
         Empezá a vender<br />en minutos.
